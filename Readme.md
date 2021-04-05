@@ -66,7 +66,7 @@ kubectl apply -f https://raw.githubusercontent.com/pingcap/tidb-operator/v1.1.11
 helm repo add pingcap https://charts.pingcap.org/
 kubectl create namespace tidb-admin && helm install --namespace tidb-admin tidb-operator pingcap/tidb-operator --version v1.1.11
 ```
-For more details, please refer the official [documentation](https://docs.pingcap.com/tidb-in-kubernetes/stable/get-started)
+For more details, please refer the official [documentation](https://docs.pingcap.com/tidb-in-kubernetes/stable/get-started).
 
 ### Install TiDB Cluster
 ```
@@ -133,6 +133,7 @@ We use linux network tool `tc` to apply the latency to the pod. See more details
 Kubernetes provides `MutatingAdmissionWebhook` for resource mutations. Setting up the webhook and appending the agent container to the pod during the admission will do the work. See more details [here](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#mutatingadmissionwebhook)
 
 # References
-Kubernetes Official Document: [Link](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers)
-Kubernetes Webhook Example: [Link](ttps://github.com/kubernetes/kubernetes/blob/v1.13.0/test/images/webhook/main.go)
-Istio Auto Injection Document: [Link](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection)
+- Kubernetes Official Document: [Link](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers)
+- Kubernetes Webhook Example: [Link](https://github.com/kubernetes/kubernetes/blob/v1.13.0/test/images/webhook/main.go)
+- Istio Auto Injection Document: [Link](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection)
+- Pingcap TiDB Document: [Link](https://docs.pingcap.com/tidb-in-kubernetes/stable)
