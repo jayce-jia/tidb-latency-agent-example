@@ -5,3 +5,5 @@
 
 **/*.crt
 **/*.pem
+
+**/.DS_Store
